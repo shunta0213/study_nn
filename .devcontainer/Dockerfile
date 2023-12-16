@@ -29,7 +29,7 @@ RUN wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git
   echo "GIT_PS1_SHOWUNTRACKEDFILES=true";\
   echo "GIT_PS1_SHOWSTASHSTATE=true";\
   echo "GIT_PS1_SHOWUPSTREAM=auto";\
-  echo 'PS1="\[\e[1;32m\]\u@\h\[\e[m\]:\[\e[1;34m\]\W\[\e[m\]\[\e[33m\]\$(__git_ps1)\[\e[m\]\$ "') >> ~/.bashrc
+  echo 'PS1="\[\e[1;32m\]\u@\h\[\e[m\]:\[\e[1;34m\]\w\[\e[m\]\[\e[33m\]\$(__git_ps1)\[\e[m\]\$ "') >> ~/.bashrc
 
 RUN pip install --upgrade pip ;\
-  pip install jupyter
+  pip install jupyter matplotlib
