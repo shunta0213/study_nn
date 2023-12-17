@@ -32,4 +32,10 @@ RUN wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git
   echo 'PS1="\[\e[1;32m\]\u@\h\[\e[m\]:\[\e[1;34m\]\w\[\e[m\]\[\e[33m\]\$(__git_ps1)\[\e[m\]\$ "') >> ~/.bashrc
 
 RUN pip install --upgrade pip ;\
-  pip install jupyter matplotlib
+  pip install \
+  jupyter \
+  matplotlib \
+  pandas \
+  bs4 \
+  lxml \
+  selenium
