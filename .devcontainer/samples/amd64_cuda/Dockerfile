@@ -1,4 +1,4 @@
-FROM python:3.11-bullseye
+FROM pytorch/pytorch:2.1.2-cuda12.1-cudnn8-devel
 
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive ;\
   apt-get install -y git wget sudo vim curl
@@ -19,7 +19,7 @@ USER vscode
 
 # git config
 RUN git config --global --add safe.directory /workspaces  ;\
-  cp ~/.gitconfig ~/.gitconifg ;\
+  cp ~/.gitconfig ~/.gitconfig ;\
   wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -O ~/.git-completion.bash ;\
   wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -O ~/.git-prompt.sh ;\
   source ~/.git=completion.bash ;\
@@ -32,8 +32,6 @@ RUN git config --global --add safe.directory /workspaces  ;\
   echo "GIT_PS1_SHOWUPSTREAM=auto";\
   echo 'PS1="\[\e[1;32m\]\u@\h\[\e[m\]:\[\e[1;34m\]\w\[\e[m\]\[\e[33m\]\$(__git_ps1)\[\e[m\]\$ "') >> ~/.bashrc
 
-
-# install other pkgs
 RUN pip3 install --upgrade pip ;\
   pip3 install \
   jupyter \
@@ -42,6 +40,3 @@ RUN pip3 install --upgrade pip ;\
   bs4 \
   lxml \
   selenium
-
-# install pytorch
-RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu

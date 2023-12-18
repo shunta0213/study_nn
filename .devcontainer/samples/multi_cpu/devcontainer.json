@@ -1,10 +1,10 @@
 {
-  "name": "Python 3 with cuda",
+  "name": "Python 3",
   "dockerComposeFile": [
     "compose.yaml"
   ],
   "service": "api",
-  "workspaceFolder": "/workspace",
+  "workspaceFolder": "/workspaces",
   "customizations": {
     "vscode": {
       "extensions": [
