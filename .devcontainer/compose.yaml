@@ -8,6 +8,10 @@ services:
     volumes:
       - ..:/workspaces
     tty: true
+    resources:
+      reservations:
+        devices:
+          capabilities: [ gpu ]
 
   selenium:
     image: seleniarm/standalone-chromium:117.0

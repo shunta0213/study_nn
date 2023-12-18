@@ -1,10 +1,9 @@
 {
   "name": "Python 3",
-  "build": {
-    "context": ".",
-    "dockerfile": "Dockerfile"
-  },
-  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "dockerComposeFile": [
+    "compose.yaml"
+  ],
+  "service": "api",
   "workspaceFolder": "/workspace",
   "customizations": {
     "vscode": {

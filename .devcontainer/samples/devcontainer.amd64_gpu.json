@@ -1,14 +1,9 @@
 {
   "name": "Python 3 with cuda",
-  "build": {
-    "context": ".",
-    "dockerfile": "Dockerfile"
-  },
-  "runArgs": [
-    "--gpus",
-    "all"
+  "dockerComposeFile": [
+    "compose.yaml"
   ],
-  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "service": "api",
   "workspaceFolder": "/workspace",
   "customizations": {
     "vscode": {
