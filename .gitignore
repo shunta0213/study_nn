@@ -3,6 +3,6 @@ lessons/result
 nba/mvps
 nba/player
 
-.devcontainer/devcontainer.json
 .devcontainer/Dockerfile
-.devcontainer/docker
+.devcontainer/devcontainer.json
+.devcontainer/compose.yaml
