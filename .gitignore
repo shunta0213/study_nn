@@ -1,6 +1,7 @@
 lessons/data
 lessons/result
 nba/mvps
+nba/player
 
 .devcontainer/devcontainer.json
 .devcontainer/Dockerfile
