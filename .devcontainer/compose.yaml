@@ -1,0 +1,21 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      SELENIUM_URL: http://selenium:4444/wd/hub
+    volumes:
+      - ..:/workspaces
+    tty: true
+
+  selenium:
+    image: seleniarm/standalone-chromium:117.0
+    shm_size: 2gb
+    ports:
+      - 4444:4444
+      - 7900:7900
+    volumes:
+      - ./docker/selenium/shm:/dev/shm
+    depends_on:
+      - api

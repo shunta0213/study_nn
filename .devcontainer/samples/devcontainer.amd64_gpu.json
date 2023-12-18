@@ -2,7 +2,7 @@
   "name": "Python 3 with cuda",
   "build": {
     "context": ".",
-    "dockerfile": "Dockerfile.amd_gpu"
+    "dockerfile": "Dockerfile"
   },
   "runArgs": [
     "--gpus",

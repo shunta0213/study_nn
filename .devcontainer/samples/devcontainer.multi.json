@@ -2,7 +2,7 @@
   "name": "Python 3",
   "build": {
     "context": ".",
-    "dockerfile": "Dockerfile.multi"
+    "dockerfile": "Dockerfile"
   },
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
   "workspaceFolder": "/workspace",
