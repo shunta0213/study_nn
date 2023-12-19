@@ -1,7 +1,7 @@
 ,Abbreviation/ Acronym,Franchise
 0,ATL,Atlanta Hawks
 1,BOS,Boston Celtics
-2,BKN,Brooklyn Nets
+2,BRK,Brooklyn Nets
 3,CHA,Charlotte Hornets
 4,CHI,Chicago Bulls
 5,CLE,Cleveland Cavaliers
@@ -22,7 +22,7 @@
 20,OKC,Oklahoma City Thunder
 21,ORL,Orlando Magic
 22,PHI,Philadelphia 76ers
-23,PHX,Phoenix Suns
+23,PHO,Phoenix Suns
 24,POR,Portland Trail Blazers
 25,SAC,Sacramento Kings
 26,SAS,San Antonio Spurs
@@ -32,3 +32,5 @@
 0,WSB,Washington Bullets
 1,NJN,New Jersey Nets
 2,SEA,Seattle SuperSonics
+3,VAN,Vancouver Grizzlies
+4,CHH,Charlotte Hornets
