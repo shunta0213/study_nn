@@ -41,7 +41,9 @@ RUN pip3 install --upgrade pip ;\
   pandas \
   bs4 \
   lxml \
-  selenium
+  selenium \
+  'black[jupyter]' \
+  pre-commit
 
 # install pytorch
 RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu

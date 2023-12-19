@@ -17,7 +17,7 @@ cp .devcontainer/samples/Dockerfile.multi .devcontainer/Dockerfile
 Base Image
 - `pytorch/pytorch:2.1.2-cuda12.1-cudnn8-devel`
 
-Installed Packages 
+Installed Packages
 - jupyter
 - matplotlib
 - pandas

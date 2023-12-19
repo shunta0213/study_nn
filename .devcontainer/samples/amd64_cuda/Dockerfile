@@ -39,4 +39,6 @@ RUN pip3 install --upgrade pip ;\
   pandas \
   bs4 \
   lxml \
-  selenium
+  selenium \
+  'black[jupyter]' \
+  pre-commit
